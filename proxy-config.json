@@ -1,0 +1,52 @@
+{
+  "port": 3000,
+  "routes": [
+    {
+      "path": "/rest/*",
+      "upstream": "backend"
+    },
+    {
+      "path": "/db/*",
+      "upstream": "backend"
+    },
+    {
+      "path": "/api/*",
+      "upstream": "backend"
+    },
+    {
+      "path": "/login",
+      "upstream": "backend"
+    },
+    {
+      "path": "/logout",
+      "upstream": "backend"
+    },
+    {
+      "path": "/admin/*",
+      "upstream": "backend"
+    },
+    {
+      "path": "/styles/*",
+      "upstream": "backend"
+    },
+    {
+      "path": "/images/*",
+      "upstream": "backend"
+    },
+    {
+      "path": "/proza/*",
+      "upstream": "backend"
+    },
+    {
+      "upstream": "frontend"
+    }
+  ],
+  "upstreams": {
+    "frontend": {
+      "port": 8081
+    },
+    "backend": {
+      "port": 8082
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Demo proza error in Lit-Element",
+  "short_name": "DPE",
+  "description": "Demo proza error in Lit-Element",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#ffe615",
+  "background_color": "#ffe615"
+}

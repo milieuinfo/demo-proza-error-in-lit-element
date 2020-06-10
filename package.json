@@ -1,0 +1,52 @@
+{
+  "name": "demo-proza-error-in-lit-element",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "polymer serve",
+    "build": "polymer build",
+    "build:static": "polymer build",
+    "serve": "prpl-server --root server/build",
+    "serve:static": "polymer serve --port 5000 build/es6-bundled",
+    "polymer:serve": "polymer serve -p 8081",
+    "proxy": "json-http-proxy",
+    "local": "concurrently --kill-others \"npm run polymer:serve\" \"npm run proxy\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milieuinfo/demo-proza-error-in-lit-element.git"
+  },
+  "author": "zhaodifeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/milieuinfo/demo-proza-error-in-lit-element/issues"
+  },
+  "homepage": "https://github.com/milieuinfo/demo-proza-error-in-lit-element#readme",
+  "dependencies": {
+    "lit-element": "~2.3.1",
+    "lit-html": "~1.2.1",
+    "vl-ui-button": "~5.0.2",
+    "vl-ui-checkbox": "~3.0.2",
+    "vl-ui-core": "~5.5.2",
+    "vl-ui-grid": "~3.1.0",
+    "vl-ui-icon": "~5.0.1",
+    "vl-ui-proza-message": "~1.0.2",
+    "vl-ui-template": "~3.0.2",
+    "vl-ui-titles": "~3.0.2",
+    "vl-ui-wizard": "github:milieuinfo/webcomponent-vl-ui-wizard#apocow",
+    "vo-footer": "~1.0.2",
+    "vo-header": "~1.0.3"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "del": "^5.0.0",
+    "fake-fetch": "^2.2.0",
+    "gulp": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.0.0",
+    "json-http-proxy": "^1.0.0",
+    "polymer-cli": "^1.9.11",
+    "polyserve": "^0.27.0",
+    "puppeteer": "^3.3.0"
+  }
+}
